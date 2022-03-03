@@ -17,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/Issafeature/lambda-test-app/issues"
   },
-  "homepage": "https://github.com/Issafeature/lambda-test-app#readme",
+  "homepage": "https://github.com/Issafeature/lambda-test-app",
   "devDependencies": {
     "@babel/core": "^7.17.5",
     "@babel/preset-env": "^7.16.11",
