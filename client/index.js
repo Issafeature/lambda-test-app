@@ -11,7 +11,7 @@
 //   document.getElementById('root')
 // );
 
-import component from './app.js';
+import app from './app.js';
 // import './modules/assets/style.css';
 
 document.body.appendChild(app());

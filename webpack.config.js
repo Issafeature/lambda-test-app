@@ -81,7 +81,7 @@ module.exports = {
     // set up the proxy such that you can call API requests from hot-reload webpack server to the express back-end server
     // aka fetch req. from localhoast:8080/api/* redirect to localhost:3000/api/*
     proxy: {
-      '/': 'http://localhost:3000',
+      '/': 'http://localhost:6767',
       secure: false,
     } 
   },

@@ -8,6 +8,7 @@ const cookieParser = require('cookie-parser');
 
 // Import useControllers:
 const { verifyUser, createUser } = require('./controllers/userControllers.js');
+const { aws } = require('./controllers/awsController.js')
 
 
 // const mongoose = require('mongoose');
@@ -18,6 +19,7 @@ const { verifyUser, createUser } = require('./controllers/userControllers.js');
 app.use(express.json());
 app.use(cookieParser());
 app.use(express.urlencoded());
+app.use(express.static('./client'));
 
 
 app.get('/', (req, res, next) => {
