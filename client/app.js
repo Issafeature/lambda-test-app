@@ -18,20 +18,17 @@ export default () => {
   countText.setAttribute('id', 'count');
   countText.innerHTML = count;
 
-  button.onclick = function() {
+  button.onclick = async function() {
     console.log('increment button clicked');
 
     // fetch request is the trigger for the lambda function, which will then send an incremented value;
-    const data = await fetch('/lambda');
-    let json = data.json();
+    const results = await fetch('/lambda');
+    let resultsJSON = data.json();
 
-    let value = parseInt(document.getElementById('count').innerHTML);
+    parseInt(document.getElementById('count').innerHTML) = parseInt(resultsJSON)
     // let value = parseInt(element.innerHTML);
 
     console.log('value is: ', value);
-    
-    document.getElementById('count').innerHTML = parseInt(value);
-
   
   }
 

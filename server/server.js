@@ -26,7 +26,8 @@ app.get('/', (req, res, next) => {
   res.status(200).sendFile(path.resolve(__dirname, '../client/index.html'));
 });
 
-app.get('/display', (req, res) => {
+app.get('/lambda', (req, res) => {
+  // awsController middleware
   
 });
 
